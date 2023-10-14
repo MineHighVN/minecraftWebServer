@@ -1,0 +1,19 @@
+.rulesContainer h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rulesContainer textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.rulesContainer .rulesForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rulesForm {
+    margin-top: 20px;
+}

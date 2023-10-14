@@ -1,0 +1,93 @@
+.commentBox {
+    padding: 10px 20px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    width: 100%;
+    height: 110px;
+    resize: none;
+    outline: none;
+}
+
+.commentContainer>form {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 10px;
+}
+
+.sendComment {
+    display: flex;
+    justify-content: right;
+}
+
+.sendComment button {
+    background: var(--OKButton);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.sendComment button:hover {
+    background: var(--OKButtonHover);
+}
+
+.postInformation {
+    display: flex;
+    flex-direction: column;
+}
+
+.postContainer>div,
+.userComments>div {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+}
+
+.postContainer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.postContainer h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.postContainer .error {
+    margin: 20px 0;
+}
+
+.userComments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.postContainer .content {
+    margin: 15px 0;
+}
+
+.postContainer .author {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.postContainer .createdAt {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.commentInformation a {
+    color: unset;
+    text-decoration: none;
+}

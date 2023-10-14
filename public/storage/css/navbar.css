@@ -1,0 +1,165 @@
+.navbarParent {
+    display: flex;
+    border-bottom: 4px solid var(--navbarColor);
+    padding: 10px 20px;
+    justify-content: center;
+    background: #fff;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: var(--maxWidth);
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul a {
+    position: relative;
+    z-index: 1;
+    padding: 26px 20px;
+    font-weight: 600;
+    color: var(--navbarTextColor);
+    transition: all .2s;
+}
+
+.navbar ul .active,
+.navbar ul a:hover {
+    border-bottom: 4px solid var(--navbarActiveColor);
+    color: var(--navbarActiveColor);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: var(--maxWidth);
+    width: calc(100vw - 80px);
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.navbar .overlay {
+    display: none;
+}
+
+.navbarHeader {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbarHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+        width: 100%;
+        border-bottom: 1px solid var(--gray);
+    }
+
+    .navbar ul.show {
+        left: 0;
+    }
+
+    .navbar ul.show~.overlay {
+        display: block;
+    }
+
+    .navbarHeader .title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .navbarHeader .close {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .navbar .overlay {
+        display: none;
+        position: fixed;
+        z-index: 998;
+        background: #0000008f;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .navbar ul {
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        left: -100%;
+        border: 1px solid var(--gray);
+        height: 100vh;
+        width: 80vw;
+        top: 0;
+        padding: 0 20px;
+        transition: all .35s;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        border-bottom: 1px solid var(--gray);
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        border: none !important;
+    }
+
+    .navbar>* {
+        flex: 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}

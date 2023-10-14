@@ -1,0 +1,134 @@
+.profileHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.mainProfile .username {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contentWDescription {
+    display: flex;
+}
+
+.mainProfile .description {
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--lgShadow);
+    width: 100%;
+    max-width: calc(100% - 20px);
+}
+
+.mainProfile .description h3:nth-child(1),
+.mainProfile .description,
+.mainProfile .description>div>div {
+    border-radius: 10px;
+}
+
+.mainProfile .description>div>div {
+    padding: 20px 10px;
+    background: #fff;
+}
+
+.mainProfile .description h3 {
+    text-align: center;
+    font-weight: 500;
+    background: var(--lightGray);
+    padding: 8px 0;
+}
+
+.mainProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mainProfile button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background: none;
+    text-align: left;
+    padding: 20px 10px;
+    transition: all .2s;
+}
+
+.mainProfile button:hover {
+    background: var(--gray);
+}
+
+.settings {
+    padding: 0 !important;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.profileEdit {
+    flex: 1;
+    background: #fff;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.profileEdit h3 {
+    text-align: center;
+    padding: 5px 0;
+    padding-top: 0;
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 20px;
+}
+
+.profileEdit textarea {
+    height: 100px;
+}
+
+.profileEdit textarea,
+.profileEdit input {
+    width: 100%;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    padding: 10px 20px;
+}
+
+.profileEdit button {
+    margin-top: 10px;
+}
+
+.profileEditBody {
+    overflow-y: auto;
+}
+
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profileMessage {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .profileContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contentWDescription {
+        width: 100%;
+    }
+
+    .mainProfile .description {
+        max-width: unset;
+    }
+}

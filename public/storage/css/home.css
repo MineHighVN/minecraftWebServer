@@ -1,0 +1,92 @@
+.home>div {
+    background: #fff;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+}
+
+.homeBody {
+    flex: 1;
+    /* height: 100%; */
+}
+
+.adminPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.adminPanel .option {
+    display: flex;
+    flex-direction: column;
+}
+
+.adminPanel h3 {
+    padding: 0 20px;
+}
+
+.adminPanel a {
+    color: unset;
+    text-decoration: none;
+    border-top: 1px solid var(--gray);
+    padding: 10px 5px;
+}
+
+.serverInformation .serverIcon {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.serverInformation {
+    background: #0F0F0F;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+.serverInformation .serverBody * {
+    font-size: 18px;
+}
+
+.serverInformation .serverHeader {
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 5px;
+}
+
+.serverInformation .serverBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.serverMotd {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .serverMotd div:nth-last-child(1) {
+        display: none;
+    }
+}

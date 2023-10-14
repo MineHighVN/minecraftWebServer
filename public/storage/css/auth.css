@@ -1,0 +1,134 @@
+body {
+    background: #F7F7FC;
+}
+
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.authBox {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background: #fff;
+    border: 3px solid #b6b6b6;
+    padding: 100px 50px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.authBox h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.authBox h2 {
+    font-weight: 500;
+    opacity: .7;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #5c5e74;
+}
+
+.authHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.authInput {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.authInput div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    color: #4a4b65;
+}
+
+.authInput input {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    flex: 1;
+    color: #4a4b65;
+}
+
+.authButton {
+    padding: 20px 50px;
+    background: #377cdd;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.authButton:hover {
+    background: #275597;
+}
+
+.authRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.back {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.back a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 999px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.messageBox>div {
+    margin-top: 10px;
+}
+
+.authLeft {
+    width: calc(100vw - 20px);
+    max-width: 400px;
+}
+
+@media (max-width: 1024px) {
+    .authBox {
+        flex-direction: column;
+        max-width: calc(100% - 20px);
+        padding: 50px 10px;
+    }
+
+    .authLeft {
+        padding: 20px;
+    }
+
+    .authInput>div {
+        overflow: hidden;
+    }
+
+    .authButton {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+}

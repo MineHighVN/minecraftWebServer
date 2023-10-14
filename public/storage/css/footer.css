@@ -1,0 +1,46 @@
+.footerParent {
+    display: flex;
+    justify-content: center;
+    background: #171A21;
+    padding: 50px 20px;
+}
+
+.footerParent footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    max-width: var(--maxWidth);
+}
+
+.footerParent footer>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 50px;
+    flex: 1;
+}
+
+.footerParent footer>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: .7;
+}
+
+.footerParent a {
+    color: unset;
+    text-decoration: none;
+    min-width: max-content;
+}
+
+.footerParent h3 {
+    color: var(--primaryColor);
+}
+
+.footerParent .socialNetwork {
+    opacity: 1 !important;
+}

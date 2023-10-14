@@ -1,0 +1,107 @@
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blogContainer>a {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 20px;
+    color: unset;
+    text-decoration: none;
+    background: #fff;
+}
+
+.blogContainer .title * {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.blogContainer .authorWCreatedAt {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.createPostBox {
+    background: #fff;
+    box-shadow: var(--lgShadow);
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.createPostRedirect {
+    display: block;
+    width: 100%;
+    color: unset;
+    padding: 10px 15px;
+    border-radius: 999px;
+    text-decoration: none;
+    background: #F0F2F5;
+    transition: all .2s;
+}
+
+.createPostRedirect:hover {
+    background: #E4E6E9;
+    transition: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.createPost {
+    width: 100%;
+}
+
+.createPost textarea {
+    width: 100%;
+    padding: 10px 20px;
+    height: 300px;
+    max-height: calc(100vh - 100px);
+    resize: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+.createPost button {
+    border: none;
+    background: var(--lightBlue);
+    cursor: pointer;
+    transition: all .2s;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 999px;
+}
+
+.createPost button:hover {
+    background: var(--darkBlue);
+}
+
+.createPostTitle {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.createPost textarea,
+.createPost input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--gray);
+    padding: 10px 20px;
+}
+
+.createPost input {
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+
+.createPostContainer .message {
+    margin: 20px 0;
+}
